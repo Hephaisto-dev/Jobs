@@ -69,7 +69,7 @@ public abstract class JobsDAO {
     }
 
     public enum worldsTableFields implements JobsTableInterface {
-        name("varchar(36)", true);
+        name("varchar(256)", true);
 
         private String type;
 
@@ -222,7 +222,7 @@ public abstract class JobsDAO {
     }
 
     public enum BlockTableFields implements JobsTableInterface {
-        world("varchar(36)"),
+        world("varchar(256)"),
         x("int"),
         y("int"),
         z("int"),
@@ -341,7 +341,7 @@ public abstract class JobsDAO {
     }
 
     public enum ExploreDataTableFields implements JobsTableInterface {
-        worldname("varchar(64)"),
+        worldname("varchar(256)"),
         chunkX("int"),
         chunkZ("int"),
         playerNames("text"),
